@@ -1,62 +1,62 @@
 # AIOSQLITE Auto Backup Webhook
 
-Este projeto permite realizar backups automáticos do seu banco de dados `aiosqlite` para uma webhook. É uma solução simples e eficiente para garantir que seus dados estejam sempre seguros em backups externos.
+This project allows you to automatically back up your `aiosqlite` database to a webhook. It is a simple and efficient solution to ensure your data is always safely stored in external backups.
 
-## Funcionalidades
+## Features
 
-- Backup automático do banco de dados `aiosqlite`.
-- Envio do backup para uma URL de webhook especificada.
-- Configuração simples por meio de um arquivo `.env`.
+- Automatic `aiosqlite` database backup.
+- Uploads the backup to a specified webhook URL.
+- Simple configuration using a `.env` file.
 
-## Estrutura do Projeto
+## Project Structure
 
-- `backup.py`: O script principal que realiza o backup e envia os dados para a webhook.
-- `exemplo.env`: Um exemplo de arquivo de configuração com as variáveis necessárias.
+- `backup.py`: Main script responsible for creating the backup and sending the data to the webhook.
+- `example.env`: Example configuration file containing the required environment variables.
 
-## Como Usar
+## How to Use
 
-### 1. Clone o Repositório
+### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/seuusuario/aiosqlite-auto-backup-webhook.git
+git clone https://github.com/yourusername/aiosqlite-auto-backup-webhook.git
 ```
 
-### 2. Instale as Dependências
+### 2. Install the Dependencies
 
-Certifique-se de que você tem o Python instalado e execute:
+Make sure Python is installed, then run:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3. Configure o Arquivo `.env`
+### 3. Configure the `.env` File
 
-Renomeie o arquivo `exemplo.env` para `.env` e preencha as informações:
+Rename the `example.env` file to `.env` and fill in the required information:
 
 ```env
-WEBHOOK= https://sua-webhook.url
+WEBHOOK=https://your-webhook.url
 ```
 
-- **WEBHOOK**: URL da webhook para onde o backup será enviado.
+- **WEBHOOK**: The webhook URL where the backup will be uploaded.
 
-### 4. Execute o Script
+### 4. Run the Script
 
-Inicie o processo de backup:
+Start the backup process:
 
 ```bash
 python backup.py
 ```
 
-O script irá compactar o banco de dados e enviar o arquivo para a URL configurada no `.env`.
+The script will compress the database and upload the file to the URL configured in the `.env` file.
 
-## Exemplo de Configuração
+## Configuration Example
 
-O arquivo `exemplo.env` mostra um exemplo de como configurar as variáveis necessárias:
+The `example.env` file demonstrates how to configure the required variables:
 
 ```env
-WEBHOOK= https://example.com/webhook
+WEBHOOK=https://example.com/webhook
 ```
 
-## Contribuindo
+## Contributing
 
-Contribuições são bem-vindas! Se você tiver sugestões ou encontrar problemas, sinta-se à vontade para abrir uma *issue* ou enviar um *pull request*.
+Contributions are welcome! If you have suggestions or encounter any issues, feel free to open an *issue* or submit a *pull request*.
